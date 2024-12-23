@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/LSound.mp3-e0d940d74b1435df9750294c000357c6.mp3str"
+
+[deps]
+
+source_file="res://Loss/LSound.mp3"
+dest_files=[ "res://.import/LSound.mp3-e0d940d74b1435df9750294c000357c6.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

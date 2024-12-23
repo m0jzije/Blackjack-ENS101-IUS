@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Card.mp3-003ba7e8830b0d876dafd519464330f1.mp3str"
+
+[deps]
+
+source_file="res://Main/Textures/Card.mp3"
+dest_files=[ "res://.import/Card.mp3-003ba7e8830b0d876dafd519464330f1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

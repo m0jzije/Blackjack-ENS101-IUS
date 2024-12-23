@@ -1,0 +1,63 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Name/Name.gd" type="Script" id=1]
+[ext_resource path="res://Main Menu/8bitOperatorPlus8-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Name/NameBG.jpg" type="Texture" id=3]
+
+[sub_resource type="Theme" id=1]
+
+[sub_resource type="DynamicFont" id=2]
+size = 46
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 50
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 20
+font_data = ExtResource( 2 )
+
+[node name="Enter" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = -155.0
+margin_top = -67.0
+margin_right = 1125.0
+margin_bottom = 653.0
+texture = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 410.0
+margin_top = 202.0
+margin_right = 658.0
+margin_bottom = 241.0
+theme = SubResource( 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Your name"
+align = 1
+valign = 1
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="LineEdit" type="LineEdit" parent="."]
+margin_left = 380.0
+margin_top = 250.0
+margin_right = 680.0
+margin_bottom = 300.0
+custom_fonts/font = SubResource( 3 )
+
+[node name="Enter" type="Button" parent="."]
+margin_left = 380.0
+margin_top = 350.0
+margin_right = 680.0
+margin_bottom = 400.0
+custom_fonts/font = SubResource( 4 )
+text = "Enter"
+
+[connection signal="text_entered" from="LineEdit" to="." method="_on_LineEdit_text_entered"]
+[connection signal="pressed" from="Enter" to="." method="_on_Button_pressed"]
